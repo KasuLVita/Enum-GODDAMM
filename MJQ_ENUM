@@ -1,0 +1,26 @@
+Enum Charr_Bratoin_passiveskills()
+{
+  Move,
+  Jump,
+  Squat
+}
+void Champion_Bration()
+{
+    Charr_bratoin_passiveskills passive_skills = Charr_bratoin_passiveskills.Move;
+    var View_on_MyList = enum.GetValue(typeof(Charr_bratoin_passiveskills));
+    
+    switch(passive_skills)
+    {
+      case Charr_bratoin_passiveskills.Move:
+        break;
+      case Charr_bratoin_passiveskills.Jump;      /* ListView =Viewmy_LIST */
+        break;
+      case Charr_bratoin_passiveskills.Squat;
+        break;
+      default:
+        break;
+    }
+    
+    Viewmy_LIST.ItemsSource = View_on_MyList;
+    
+}
